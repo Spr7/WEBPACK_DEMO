@@ -3,9 +3,9 @@ const path = require("path");
 
 module.exports = {
   mode: "production",
-  entry: path.resolve(__dirname, "src/index.js"),
+  entry: { index: path.resolve(__dirname, "src/index.js") },
   output: {
-    filename: "bundle.js",
+    filename: "[name].bundle.js",
     path: path.resolve(__dirname, "build"),
   },
   module: {
@@ -18,11 +18,19 @@ module.exports = {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.js$/i,
+
+        use: "babel-loader",
+        exclude: /node_modules/,
+      },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: "./index.html",
-    }),
-  ],
+  // plugins: [{ present: ["@babel/present-env"] }],
+  plugins: [new HtmlWebpackPlugin({ template: "./index.html" })],
+  optimization: {
+    splitChunks: {
+      chunks: "all",
+    },
+  },
 };

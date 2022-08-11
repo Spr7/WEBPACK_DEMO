@@ -1,7 +1,7 @@
 import axios from "axios";
 import { sum } from "./utils/maths";
 import { mul } from "./utils/maths";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/style.css";
 import jsonContent from "./model/notes.json";
 import textContent from "./utils/test.txt";
