@@ -21,3 +21,4 @@ console.log("sum:", sum(2, 4));
 console.log("mul:", mul(2, 4));
 console.log(jsonContent);
 console.log(textContent);
+console.log("ARE YOU THERE!");
