@@ -1,0 +1,1 @@
+(()=>{"use strict";const o=JSON.parse('{"name":"Prashanth","user id":"9876","mail id":"abc@abc.com"}');console.log("hello"),console.log("sum:",6),console.log("mul:",8),console.log(o),console.log("hello brother how are you!")})();

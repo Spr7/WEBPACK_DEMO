@@ -1,1 +1,0 @@
-(()=>{"use strict";console.log("hello"),console.log("sum:",6),console.log("mul:",8)})();
