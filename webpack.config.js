@@ -13,6 +13,10 @@ module.exports = {
         test: /\.txt$/i,
         use: "raw-loader",
       },
+      {
+        test: /\.css$/i,
+        use: ["css-loader", "style-loader"],
+      },
     ],
   },
 };

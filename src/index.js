@@ -1,5 +1,6 @@
 import { sum } from "./utils/maths";
 import { mul } from "./utils/maths";
+import "./css/style.css";
 import jsonContent from "./model/notes.json";
 import textContent from "./utils/test.txt";
 console.log("hello");
